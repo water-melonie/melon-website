@@ -1,0 +1,67 @@
+html{
+    height: 100%;
+    width: 100%;
+}
+
+body{
+    height: 100%;
+    width: 100%;
+    background-color: rgb(200, 196, 229);
+}
+
+.parallax{
+    background-image: url("background.jpg");
+    min-height: 100%;
+    background-attachment: fixed !important;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.card-title{
+    color: rgb(255, 255, 255) !important;
+    font-family: 'Abril Fatface', cursive;
+    font-size: 600%;
+    margin-top: 250px;
+    text-shadow: 5px 2px rgb(147, 133, 133);
+}
+    
+.card-text{
+    color: rgb(255, 255, 255) !important;
+    font-family: 'Rubik', sans-serif;
+    font-size: 120%;
+    text-shadow: 2px 2px rgb(147, 133, 133);
+}
+
+.center-card{
+    text-align: center;
+    padding: 200px;
+}
+
+a{
+    color: rgb(255, 255, 255) !important;
+}
+    
+a:hover{
+    background-color: rgb(33, 27, 52) !important;
+}
+    
+a:active{
+    color: rgb(255, 255, 255) !important;
+    background-color: rgb(120, 113, 168) !important;
+}
+
+.mini-me{
+    height:50px;
+    width:50px;
+    border-radius: 25%;
+}
+
+.d-block{
+    height: 1000px;
+    width: 1000px;
+}
+
+.carousel-caption{
+    text-shadow: 3px, 4px, 2px, black;
+}
