@@ -1,88 +1,77 @@
-<html>
-
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width">
-    <title>Portfolio Website Testing</title>
+    <title>All Work</title>
     <link rel="icon" type="image/x-icon" href="art/melonie.jpg">
     <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Roboto+Slab&family=Rubik:wght@600&family=Trispace:wght@300&display=swap" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
     <link href="style.css" rel="stylesheet"/>
-    <body>
-        <center>
-            <nav class="navbar navbar-expand-lg" style="background-color: rgb(101, 100, 158);">
-                <div class="container-fluid">
-                  <a class="navbar-brand" href="#"><img src="art/melonie.jpg" class="mini-me"></a>
-                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                  </button>
-                  <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-                    <div class="navbar-nav">
-                      <a class="nav-link active" aria-current="page" href="index.html">Home</a>
-                      <a class="nav-link" href="graphicNovel.html">All Work</a>
-                      <a class="nav-link" href="contact.html">Contact</a>
-                    </div>
-                  </div>
+<body>
+    <center>
+        <nav class="navbar navbar-expand-lg" style="background-color: rgb(101, 100, 158);">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="#"><img src="art/melonie.jpg" class="mini-me"></a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav">
+                  <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                  <a class="nav-link" href="graphicNovel.html">All Work</a>
+                  <a class="nav-link" href="contact.html">Contact</a>
                 </div>
-              </nav>
-        </center>
-        <div class="flipbook-container">
-            <!-- Flipbook wrapper -->
-            <div class="flipbook">
-                <div class="page" id="page1">
-                    <img src="Graphic Novel/Page 1.JPG" alt="Page 1">
+              </div>
+            </div>
+          </nav>
+    </center>
+    <!-- Previous Button -->
+    <button id="prev-btn">Go Back</button>
+
+    <!-- Book -->
+    <div id="book" class="book">
+        <!-- Paper 1 -->
+        <div id="p1" class="paper">
+            <div class="front">
+                <div id="f1" class="front-content">
+                    <img src="image1.jpg">
                 </div>
-                <div class="page" id="page2">
-                    <img src="Graphic Novel/Page 2.JPG" alt="Page 2">
+            </div>
+            <div class="back">
+                <div id="b1" class="back-content">
+                    <img src="image2.jpg">
                 </div>
-                <div class="page" id="page3">
-                    <img src="Graphic Novel/Page 3.JPG" alt="Page 3">
-                </div>
-                <div class="page" id="page4">
-                    <img src="Graphic Novel/Page 4.JPG" alt="Page 4">
-                </div>
-                <div class="page" id="page5">
-                    <img src="Graphic Novel/Page 5.JPG" alt="Page 5">
-                </div>
-                <div class="page" id="page6">
-                    <img src="Graphic Novel/Page 6.JPG" alt="Page 6">
-                </div>
-                <div class="page" id="page7">
-                    <img src="Graphic Novel/Page 7.JPG" alt="Page 7">
-                </div>
-                <div class="page" id="page8">
-                    <img src="Graphic Novel/Page 8.JPG" alt="Page 8">
-                </div>
-                <div class="page" id="page9">
-                    <img src="Graphic Novel/Page 9.JPG" alt="Page 9">
-                </div>
-                <div class="page" id="page9">
-                    <img src="Graphic Novel/Page 9.JPG" alt="Page 9">
-                </div>
-                <div class="page" id="page10">
-                    <img src="Graphic Novel/Page 10.JPG" alt="Page 10">
-                </div>
-                <div class="page" id="page11">
-                    <img src="Graphic Novel/Page 11.JPG" alt="Page 11">
-                </div>
-                <div class="page" id="page12">
-                    <img src="Graphic Novel/Page 12.JPG" alt="Page 12">
-                </div>
-                <div class="page" id="page13">
-                    <img src="Graphic Novel/Page 13.JPG" alt="Page 13">
-                </div>
-                <!-- Add more pages as needed -->
             </div>
         </div>
+        <!-- Paper 2 -->
+        <div id="p2" class="paper">
+            <div class="front">
+                <div id="f2" class="front-content">
+                    <img src="image3.jpg">
+                </div>
+            </div>
+            <div class="back">
+                <div id="b2" class="back-content">
+                    <img src="image4.jpg">
+                </div>
+            </div>
+        </div>
+        <!-- Paper 3 -->
+        <div id="p3" class="paper">
+            <div class="front">
+                <div id="f3" class="front-content">
+                    <img src="image5.jpg">
+                </div>
+            </div>
+            <div class="back">
+                <div id="b3" class="back-content">
+                    <img src="image6.jpg">
+                </div>
+            </div>
+        </div>
+    </div>
 
-        <!-- Navigation buttons for flipping -->
-        <button id="prev-btn">Previous</button>
-        <button id="next-btn">Next</button>
-
-        <script src="script.js"></script>
-    </body>
-
-
-
+    <!-- Next Button -->
+    <button id="next-btn">Go Forward</button>
+</body>
 </html>
