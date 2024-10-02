@@ -81,6 +81,36 @@ button {
     cursor: pointer;
 }
 
+#profile{
+    top: 100px;
+    right: 100px;
+    height: 400px;
+    border-radius: 400px;
+    position: relative;
+    }
+    
+    .about-container{
+    display: flex;
+    justify-content: center;
+    }
+
+.about-text{
+    height: 300px;
+    width: 500px;
+    top: 200px !important;
+    position: relative;
+    color: rgb(89, 85, 119);
+    font-family: 'Rubik', sans-serif !important;
+    background-color:rgb(200, 200, 223, 0.6);
+    border-radius: 20%;
+    padding: 2%;
+    }
+
+.pdf{
+    top: 200px;
+    position: relative;
+  }
+
 ::-webkit-scrollbar {
     width: 5px;
   }
