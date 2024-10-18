@@ -83,8 +83,8 @@ button:focus {
     outline: none;
 }
 
-button:hover i {
-    color: #636363;
+button:hover {
+    color: #ffffff;
 }
 
 /* Paper stack order */
