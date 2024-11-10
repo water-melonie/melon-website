@@ -18,6 +18,15 @@ body{
     background-size: cover;
 }
 
+.parallax2{
+    background-image: url("art/background.jpg");
+    min-height: 100%;
+    background-attachment: fixed !important;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
 .card-title{
     color: rgb(255, 255, 255) !important;
     font-family: 'Abril Fatface', cursive;
