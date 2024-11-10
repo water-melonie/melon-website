@@ -10,7 +10,7 @@ body{
 }
 
 .parallax{
-    background-image: url("background.jpg");
+    background-image: url("art/traintest.gif");
     min-height: 100%;
     background-attachment: fixed !important;
     background-position: center;
