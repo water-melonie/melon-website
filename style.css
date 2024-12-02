@@ -227,6 +227,16 @@ button {
     opacity:1;
 }
 
+.grid-container {
+    display: grid;
+    grid-template-columns: auto auto auto auto auto;
+    padding: 5px;
+  }
+  .grid-item {
+    padding: 5px;
+    font-size: 30px;
+    text-align: center;
+  }
 
 #dark{
      background-color: black !important;
