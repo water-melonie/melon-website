@@ -216,11 +216,16 @@ button {
     opacity:0;
 }
 
-.gallery-item:hover #tradional{
-    left: 20% !important;
-    top: 20% !important;
+.button{
+    float: left;
+    top: 1900px;
+    position:absolute;
+    opacity:0;
 }
 
+.button:hover{
+    opacity:1;
+}
 
 
 #dark{
