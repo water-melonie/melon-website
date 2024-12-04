@@ -112,16 +112,17 @@ button {
     height: 400px;
     border-radius: 400px;
     position: relative;
-    }
+}
     
 .about-container{
     display: flex;
     justify-content: center;
-    }
+}
 
 .about-text{
     height: 300px;
     width: 500px;
+    text-align: left;
     top: 200px !important;
     position: relative;
     color: rgb(89, 85, 119);
@@ -129,7 +130,7 @@ button {
     background-color:rgb(200, 200, 223, 0.6);
     border-radius: 20%;
     padding: 2%;
-    }
+}
 
 .pdf{
     top: 200px;
@@ -246,6 +247,24 @@ button {
     text-shadow: 3px 2px 3px rgb(93, 88, 94);
 }
 
+/* Style all font awesome icons */
+.fa {
+    padding: 20px;
+    font-size: 30px;
+    width: 50px;
+    text-align: center;
+    text-decoration: none;
+  }
+  
+/* Add a hover effect if you want */
+.fa:hover {
+    opacity: 0.7;
+  }
+
+.graphicNovel{
+    padding: 30px;
+    padding-bottom: 50px;
+}
 
 .w-1{
     grid-column: span 1;
