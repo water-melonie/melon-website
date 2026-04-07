@@ -69,75 +69,75 @@
 <!-- <object class="pdf" data="Xie, Melanie 2024.pdf" type="application/pdf" width="70%" height="450px"></object> -->
 
 <script>
-  let moveImage = anime({
-    targets: '#profile',
-    translateY: 10,
-    duration: 800,
-    easing: 'linear',
-    direction: 'alternate',
-    loop: true
-  });
+    let moveImage = anime({
+        targets: '#profile',
+        translateY: 10,
+        duration: 800,
+        easing: 'linear',
+        direction: 'alternate',
+        loop: true
+    });
 
 
-let childElement = document.querySelectorAll(".image-container");
-let imageUrls = [
-    "pictures/bread.jpg",
-    "pictures/castle.jpg",
-    "pictures/hill.JPG",
-];
+    let childElement = document.querySelectorAll(".image-container");
+    let imageUrls = [
+        "pictures/bread.jpg",
+        "pictures/castle.jpg",
+        "pictures/hill.JPG",
+    ];
 
-// stack order (first = top)
-let stack = [...childElement];
+    // stack order (first = top)
+    let stack = [...childElement];
 
-childElement.forEach((element, index) => {
-  let img = document.createElement("img");
-  img.src = imageUrls[index];
-  img.className = "image";
-  element.appendChild(img);
+    childElement.forEach((element, index) => {
+    let img = document.createElement("img");
+    img.src = imageUrls[index];
+    img.className = "image";
+    element.appendChild(img);
 
-  element.style.position = "absolute";
-  element.style.top = "0";
-  element.style.left = "0";
-  element.style.transition = "transform 0.4s ease";
+    element.style.position = "absolute";
+    element.style.top = "0";
+    element.style.left = "0";
+    element.style.transition = "transform 0.4s ease";
 
-  element.addEventListener("click", () => handleClick(element));
-});
+    element.addEventListener("click", () => handleClick(element));
+    });
 
-function updateZIndex() {
-  stack.forEach((el, i) => {
-    el.style.zIndex = stack.length - i;
+    function updateZIndex() {
+    stack.forEach((el, i) => {
+        el.style.zIndex = stack.length - i;
 
-    if (i === 0) el.style.transform = "rotate(0deg)";
-        else if (i === 1) el.style.transform = "rotate(10deg)";
-        else el.style.transform = "rotate(-30deg)";
-  });
-}
+        if (i === 0) el.style.transform = "rotate(0deg)";
+            else if (i === 1) el.style.transform = "rotate(10deg)";
+            else el.style.transform = "rotate(-30deg)";
+    });
+    }
 
-updateZIndex();
-
-function handleClick(element) {
-  // only allow top image to move
-  if (stack[0] !== element) return;
-
-  let top = stack[0];
-
-  // animate out
-  top.style.transform = "translateX(30em) rotate(5deg)";
-
-  setTimeout(() => {
-    // move top to bottom
-    stack.push(stack.shift());
     updateZIndex();
 
-    // reset instantly
-    top.style.transition = "none";
-    top.style.transform = "translateX(0) rotate(0deg)";
+    function handleClick(element) {
+    // only allow top image to move
+    if (stack[0] !== element) return;
 
-    requestAnimationFrame(() => {
-      top.style.transition = "transform 0.4s ease";
-    });
-  }, 400);
-}
+    let top = stack[0];
+
+    // animate out
+    top.style.transform = "translateX(30em) rotate(5deg)";
+
+    setTimeout(() => {
+        // move top to bottom
+        stack.push(stack.shift());
+        updateZIndex();
+
+        // reset instantly
+        top.style.transition = "none";
+        top.style.transform = "translateX(0) rotate(0deg)";
+
+        requestAnimationFrame(() => {
+        top.style.transition = "transform 0.4s ease";
+        });
+    }, 400);
+    }
 
 </script>
   
