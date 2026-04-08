@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Melanie Xie - Portfolio</title>
+  <link rel="icon" type="image/x-icon" href="art/melonie.jpg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Fredoka:wdth,wght@75..125,300..700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Nunito:wght@600;700;800&display=swap" rel="stylesheet"/>
+  <link href="style.css" rel="stylesheet"/>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+</head>
+<body>
+
+<div class="book-wrapper">
+
+  <!-- Top bar -->
+  <div class="top-bar">
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="projects.html" class="active">Projects</a>
+      <a href="about.html">About Me</a>
+    </nav>
+
+    <a href="https://www.linkedin.com/in/melanie-xie-gatech/" target="_blank" class="linkedin-btn" aria-label="LinkedIn">
+      <svg viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <rect width="40" height="40" rx="9" fill="#3b1f0e"/>
+        <path d="M12 16.5H13C11.619 16.5 10.5 15.381 10.5 14C10.5 12.619 11.619 11.5 13 11.5C14.381 11.5 15.5 12.619 15.5 14C15.5 15.381 14.381 16.5 13 16.5Z" fill="#f5f0e8"/>
+        <rect x="11" y="18" width="3" height="12" rx="1" fill="#f5f0e8"/>
+        <path d="M29 30H25V24C25 22.343 23.657 21 22 21C20.343 21 19 22.343 19 24V30H15V18H19V20.031C19.948 18.769 21.476 18 23 18C26.314 18 29 20.686 29 24V30Z" fill="#f5f0e8"/>
+      </svg>
+    </a>
+  </div>
+
+  <!-- Inner green frame -->
+  <div class="inner-frame">
+    <div class="book-pages">
+
+      <!-- LEFT PAGE: Project detail -->
+      <div class="page page-left" id="project-detail">
+
+        <div class="project-number" id="proj-number">PROJECT #4</div>
+        <div class="project-title" id="proj-title">Chompers the Depression Muncher</div>
+        <div class="project-subtitle" id="proj-subtitle">Interior/Industrial Design - Mixed Media, Adobe Illustrator</div>
+
+        <!-- Main featured image — replace src to add your image -->
+        <div class="project-main-img">
+          <div class="project-item" id="proj-main-img"><img src="art/chair.jpg" alt="Chompers the Chair"></div>
+        </div>
+
+        <!-- Description paragraphs -->
+        <div class="project-description" id="proj-desc">
+          <p>For a project in my high school Interior Design class, I had to design a chair. 
+            Inspired by Alice in Wonderland and the Cheshire cat, I designed a giant cat chair that eats you when you sit in 
+            it to become a cozy little hide-away for when life gets too overwhelming. Making a physical model was optional, but 
+            I really wanted to make Chompers come to life. I made a Bristol paper frame, glued fabric on to that frame, and 
+            then hand sewed and stuffed the different limbs before hot gluing them on to the frame. The cover of the chair 
+            model is functional with the ability to open and close, creating a enclosed space for a person to crawl inside. 
+            Chompers' arm rests are literally the cat's arms and paws which can hold beverages or snacks for you. I photoshopped 
+            myself into the chair to show how it would look if someone actually sat in it. Although the chair would be impractically 
+            big if it were built to fit a grown adult, it could serve as a fun chair for children. But I think adults would enjoy 
+            sitting in Chompers too, even if they can't fit it in their own home. Finally, I made technical drawings in Adobe Illustrator 
+            to show Chompers' different components, their functions, and how they were attached together.
+           </p>
+        </div>
+
+      </div>
+
+      <!-- RIGHT PAGE: Responsive masonry gallery -->
+      <div class="page page-right">
+        <center>
+        <img src="art/originalsketches.jpg" alt="Chompers Sketches" width="625" height="400">
+
+        <img src="art/technicaldrawings.png" alt="Chompers Technical Drawings"width="625" height="500">
+        </center>
+      </div>
+
+        <div class="project-side-tabs" id="project-side-tabs">
+            <a class="proj-tab" href="projects.html">Project 1</a>
+            <a class="proj-tab" href="projects1.html">Project 2</a>
+            <a class="proj-tab" href="projects2.html">Project 3</a>
+            <a class="proj-tab active" href="projects3.html">Project 4</a>
+            <a class="proj-tab" href="projects4.html">Project 5</a>
+            <a class="proj-tab" href="projects_other.html">Other Work</a>
+        </div>
+
+    </div>
+  </div>
+</div>
+
+</body>
+</html>

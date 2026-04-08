@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Melanie Xie - Portfolio</title>
+  <link rel="icon" type="image/x-icon" href="art/melonie.jpg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Fredoka:wdth,wght@75..125,300..700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Nunito:wght@600;700;800&display=swap" rel="stylesheet"/>
+  <link href="style.css" rel="stylesheet"/>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+</head>
+<body>
+
+<div class="book-wrapper">
+
+  <!-- Top bar -->
+  <div class="top-bar">
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="projects.html" class="active">Projects</a>
+      <a href="about.html">About Me</a>
+    </nav>
+
+    <a href="https://www.linkedin.com/in/melanie-xie-gatech/" target="_blank" class="linkedin-btn" aria-label="LinkedIn">
+      <svg viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <rect width="40" height="40" rx="9" fill="#3b1f0e"/>
+        <path d="M12 16.5H13C11.619 16.5 10.5 15.381 10.5 14C10.5 12.619 11.619 11.5 13 11.5C14.381 11.5 15.5 12.619 15.5 14C15.5 15.381 14.381 16.5 13 16.5Z" fill="#f5f0e8"/>
+        <rect x="11" y="18" width="3" height="12" rx="1" fill="#f5f0e8"/>
+        <path d="M29 30H25V24C25 22.343 23.657 21 22 21C20.343 21 19 22.343 19 24V30H15V18H19V20.031C19.948 18.769 21.476 18 23 18C26.314 18 29 20.686 29 24V30Z" fill="#f5f0e8"/>
+      </svg>
+    </a>
+  </div>
+
+  <!-- Inner green frame -->
+  <div class="inner-frame">
+    <div class="book-pages">
+
+      <!-- LEFT PAGE: Project detail -->
+      <div class="page page-left" id="project-detail">
+
+        <div class="project-number" id="proj-number">PROJECT #2</div>
+        <div class="project-title" id="proj-title">With Hue</div>
+        <div class="project-subtitle" id="proj-subtitle">Media Device Architecture Final Project - Game Boy Advance Game</div>
+
+        <!-- Main featured image — replace src to add your image -->
+        <div class="project-main-img">
+          <div class="project-item" id="proj-main-img">            
+            <div class="video-item">
+                <video autoplay muted loop playsinline>
+                    <source src="art/with_hue_gameplay.mp4" type="video/mp4">
+                </video>
+            </div>
+         </div>
+        </div>
+
+        <!-- Description paragraphs -->
+        <div class="project-description" id="proj-desc">
+          <p>A story based game in a Madoka Magica inspired universe where you play as a normal girl at day and magical girl by night. Every night you patrol your town looking for people suffering from their negative emotions. As a magical girl you can see people’s emotions and each of their emotions are represented by a color. When negative emotions overwhelm someone, they are surrounded by violent and angry colored auras that lash out and affect the colors of people around them. In order to save them, you have to match your colors to theirs and slowly desaturate their colors in a <i> I love hue </i> color puzzle mechanic.</p>
+        </div>
+
+      </div>
+
+      <!-- RIGHT PAGE: Responsive masonry gallery -->
+      <div class="page page-right">
+        <div class="masonry-gallery" id="masonry-gallery">
+
+          <div class="masonry-item">
+            <div class="placeholder-img tall">
+            <img src="art/game_start.png" alt="Game Start Screen">
+            </div>
+             <div class="masonry-caption">The Start Screen</div>
+          </div>
+
+          <div class="masonry-item">
+            <div class="placeholder-img tall">
+            <img src="art/with_hue_sprite.png" alt="Game Start Screen">
+            </div>
+             <div class="masonry-caption">Become a Magical Girl!</div>
+          </div>
+
+          <div class="masonry-item">
+            <div class="placeholder-img tall">
+            <img src="art/game_screen.png" alt="Game Screen">
+            </div>
+             <div class="masonry-caption">Patrol the city!</div>
+          </div>
+
+          
+          <div class="video-item">
+            <video autoplay muted loop playsinline> 
+                <source src="art/with_hue_gameplay2.mp4" type="video/mp4">
+            </video>
+          </div> 
+          
+
+          <div class="masonry-item">
+            <div class="placeholder-img tall">
+            <img src="art/with_hue_concept_art.PNG" alt="With Hue Game Concept Art">
+            </div>
+             <div class="masonry-caption">Concept Art</div>
+          </div>
+
+
+
+        </div>
+
+      </div>
+
+        <div class="project-side-tabs" id="project-side-tabs">
+            <a class="proj-tab" href="projects.html">Project 1</a>
+            <a class="proj-tab active" href="projects1.html">Project 2</a>
+            <a class="proj-tab" href="projects2.html">Project 3</a>
+            <a class="proj-tab" href="projects3.html">Project 4</a>
+            <a class="proj-tab" href="projects4.html">Project 5</a>
+            <a class="proj-tab" href="projects_other.html">Other Work</a>            
+        </div>
+
+    </div>
+  </div>
+</div>
+
+</body>
+</html>
