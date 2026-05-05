@@ -232,8 +232,7 @@
 
     .gallery-item img {
       width: 100%;
-      height: 100%;
-      object-fit: cover;
+      height: auto;
       display: block;
     }
 
@@ -248,13 +247,19 @@
     .gallery-item .overlay {    
       position: absolute;   
       inset: 0;
-      background: rgba(59,31,14,0);
+      background: rgb(255, 252, 252);
+      opacity: 0;
       display: flex;
       align-items: center;
       justify-content: center;
-      transition: background 0.2s;
+      transition: opacity 0.2s;
+      will-change: opacity;
     }
-    .gallery-item:hover .overlay { background: rgb(255, 252, 252); }
+
+    .gallery-item:hover .overlay { 
+      opacity: 1; 
+    }
+
     .gallery-item .overlay span {
       color: #fff;
       font-family: 'Fredoka', sans-serif;
@@ -262,7 +267,9 @@
       opacity: 0;
       transform: translateY(6px);
       transition: opacity 0.2s, transform 0.2s;
+      will-change: transform, opacity;
     }
+
     .gallery-item:hover .overlay span {
       opacity: 1;
       transform: translateY(0);
@@ -387,7 +394,6 @@
     }
 
     .masonry-item {
-      break-inside: avoid;
       margin-bottom: 10px;
       cursor: pointer;
       position: relative;
@@ -399,6 +405,11 @@
       border-right: 15px solid white;
       border-bottom: 50px solid white;
     }   
+
+    .masonry-item:hover {
+      transform: scale(1.025);
+      box-shadow: 0 6px 20px var(--shadow);
+    }
 
     .masonry-item img {
       width: 100%;
@@ -426,6 +437,72 @@
     .masonry-item .placeholder-img.short { max-height: 120px; }
     .masonry-item .placeholder-img.med   { max-height: 160px; }
 
+        /* Lightbox overlay */
+    .lightbox-overlay {
+      position: fixed;
+      inset: 0;
+      background: rgba(0, 0, 0, 0);
+      z-index: 9999;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      pointer-events: none;
+      transition: background 0.35s ease;
+    }
+
+    .lightbox-overlay.active {
+      background: rgba(0, 0, 0, 0.72);
+      pointer-events: all;
+      cursor: zoom-out;
+    }
+
+    .lightbox-card {
+      position: fixed;
+      z-index: 10000;
+      pointer-events: none;
+      will-change: transform, opacity;
+      transition:
+          transform  0.42s cubic-bezier(0.22, 1, 0.36, 1),
+          box-shadow 0.42s ease;
+      transform-origin: top left;
+    }
+
+    .lightbox-card.lifting {
+      box-shadow:
+         0 20px 60px rgba(0,0,0,0.4),
+         0 40px 100px rgba(0,0,0,0.2);
+    }
+
+    .lightbox-close {
+      position: fixed;
+      top: 20px;
+      right: 24px;
+      z-index: 10002;
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      font-size: 20px;
+      line-height: 1;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      opacity: 0;
+      transition: opacity 0.2s;
+      pointer-events: none;
+    }
+
+    .lightbox-close:hover {
+      background: rgba(207, 162, 141, 1);
+    }
+
+    .lightbox-overlay.active ~ .lightbox-close,
+    .lightbox-close.visible {
+    opacity: 1;
+    pointer-events: all;
+    }
+
+
     .video-item video {
       width: 100%;
       height: auto;
@@ -434,7 +511,7 @@
     }
 
     .hatsune-img {
-      left: 100px;
+      left: 10px;
       bottom: -40px;
       position:absolute;
       z-index: 2;
